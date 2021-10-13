@@ -22,10 +22,27 @@
       <main role="main">
   
         <section class="jumbotron text-center">
-          <div class="container">
+          <div class="container d-flex flex-column">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
+            <br><br>
+            <div class="container d-flex flex-row">
+              <div class="container d-flex align-items-center flex-column W-25">
+                <img class="w-50 rounded p-2 bg-white" src="{{ url_for('static', filename='img/apple.png') }}" alt="Apple">
+                <label for="Apple">Apple</label>
+              </div>
+              <div class="container d-flex align-items-center flex-column W-25">
+                <img class="w-50 rounded p-2 bg-white" src="{{ url_for('static', filename='img/blackberry.png') }}" alt="Blackberry">
+                <label for="Blackberry">Blackberry</label>
+              </div>
+              <div class="container d-flex align-items-center flex-column W-25">
+                <img class="w-50 rounded p-2 bg-white" src="{{ url_for('static', filename='img/raspberry.png') }}" alt="Raspberry">
+                <label for="Raspberry">Raspberry</label>
+              </div>
+              <div class="container d-flex align-items-center flex-column W-25">
+                <img class="w-50 rounded p-2 bg-white" src="{{ url_for('static', filename='img/strawberry.png') }}" alt="Strawberry">
+                <label for="Strawberry">Strawberry</label>
+              </div>
+            </div>
             <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>
